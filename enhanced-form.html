@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Week 2 HTML Assignemnt"/>
+        <meta name="author" content="Michael Njoroge"/>
+        <title>Enhanced HTML Content</title>
+    </head>
+    <body>
+        <header>
+            <h1>Week 2 Assignment - Use of lists, tables and media</h1>
+        </header>
+
+        <section id="lists">
+            <h2>Shopping List</h2>
+            <ul>
+                <li>Fruits</li>
+                <li>Juices</li>
+                <li>Baking flour</li>
+                <li>Biscuits</li>
+                <li>Sugar</li>
+            </ul>
+            <h2>Factors to consider before purchase</h2>
+            <ol type="I">
+                <li>Price</li>
+                <li>Quantity</li>
+                <li>Quality</li>
+                <li>Date of expiry</li>
+                <li>Ingredients used</li>
+            </ol>
+        </section>
+
+        <section id="tables">
+            <h2>Condition check for house items.</h2>
+            <table border="1">
+                <caption>Condition Of House Items</caption>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Condition</th>
+                        <th>Need of purchase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chairs</td>
+                        <td>Good</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Table</td>
+                        <td>Perfect</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Cups</td>
+                        <td>Fair</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="media">
+            <h2>Here is my favourite pic</h2>
+            <img src="https://i.pinimg.com/1200x/8f/a7/53/8fa75390838b7b56cd92b9b3bc617e2e.jpg" alt="He Lives In Me, Galatians 2:20" width="200" height="200"/>
+            <h2>Here is my favourite movie</h2>
+            <video width="400" height="200" controls autoplay>
+                <source src="https://videos.pexels.com/video-files/5200378/5200378-uhd_2560_1440_30fps.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <h2>Here is my favourite sermon</h2>
+            <audio controls>
+                <source src="audio/Selective Righteousness By Elsie Sn3 Ep23 6th August 2025.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="forms">
+            <h2>Fill This Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="tex`" id="name" name="name" placeholder="Enter Your Name" required/>
+                <br/> <br/>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+                <br/> <br/>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter your password" minlength="8" maxlength="15">
+                <br/> <br/>
+                <label for="sport">Sport to play:</label>
+                <input type="text" name="sport" id="sport" value="Football" readonly>
+                <br/> <br/>
+                <label for="position">Choose position:</label>
+                <select name="Which position would you want to play?">
+                    <option value="gk">Goal Keeper</option>
+                    <option value="cb">Centre Back</option>
+                    <option value="mid">Midfield</option>
+                    <option value="cf">Forward</option>
+                </select>
+                <br/> <br/>
+                <p><label for="strengths">Describe Your Strengths:</label></p>
+                <textarea name="strengths" id="strengths" rows="4" cols="50" placeholder="Write your strengths"></textarea>
+                <br/> <br/>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="Male">Male 
+                <input type="radio" name="gender" value="Female">Female
+                <br/> <br/>
+                <fieldset>
+                    <legend>Stats</legend>
+                    <label for="goals">Goals Scored:</label>
+                    <input type="number" id="goals" name="goals" placeholder="Scored how many goals"/> <br/> <br/>
+                    <label for="injury">Last Time You Got An Injury:</label>
+                    <input type="date" id="injury" name="injury"> <br/> <br/>
+                    <label for="matches">Matches Played:</label>
+                    <input type="number" id="matches" name="matches" placeholder="Enter matches played"> <br/> <br/>
+                </fieldset>
+                <br/>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+
+    </body>
+</html>
